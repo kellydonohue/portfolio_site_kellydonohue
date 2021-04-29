@@ -1,0 +1,89 @@
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+
+/*images*/
+img {
+  width: 100%;
+}
+
+/*links*/
+a {
+  color: #7bc96b;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #7bc96b;
+  text-decoration: underline;
+}
+a:visited {
+  color: #4e8e41;
+}
+a:active {
+  /* selected link */
+  color: #4e8e41;
+}
+
+/*buttons*/
+.button {
+  display: inline-block;
+  background-color: #7bc96b;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #4e8e41;
+  transition: 0.2s opacity;
+}
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button:active {
+  background-color: #4e8e41;
+  color: #ffffff;
+}
+.button.contact {
+  background-color: transparent;
+  color: #7bc96b;
+  text-transform: uppercase;
+  border: 2px solid #7bc96b;
+}
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #7bc96b;
+  color: white;
+}
+.button.contact:active {
+  background-color: #4e8e41;
+  color: #ffffff;
+}
