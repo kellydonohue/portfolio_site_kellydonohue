@@ -39,14 +39,15 @@ a {
   color: #7bc96b;
   text-decoration: none;
 }
+a:visited {
+  color: #4e8e41;
+}
 a:hover,
 a:focus {
   color: #7bc96b;
   text-decoration: underline;
 }
-a:visited {
-  color: #4e8e41;
-}
+
 a:active {
   /* selected link */
   color: #4e8e41;
@@ -64,7 +65,7 @@ a:active {
   transition: 0.2s opacity;
 }
 .button:hover,
-.button:focus {
+.button.readmore:focus {
   opacity: 0.8;
   text-decoration: none;
 }
@@ -72,16 +73,24 @@ a:active {
   background-color: #4e8e41;
   color: #ffffff;
 }
+.button.readmore {
+  color: #ffffff;
+}
 .button.contact {
   background-color: transparent;
   color: #7bc96b;
   text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px;
   border: 2px solid #7bc96b;
+  border-radius: 3px;
+  transition: 0.2s opacity;
 }
 .button.contact:hover,
 .button.contact:focus {
   background-color: #7bc96b;
   color: white;
+  text-decoration: none;
 }
 .button.contact:active {
   background-color: #4e8e41;
