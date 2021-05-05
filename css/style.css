@@ -169,10 +169,37 @@ main {
 #contact h2 {
   text-align: center;
 }
+#contact p {
+  text-align: center;
+}
+#work h2 {
+  text-align: center;
+}
+footer p {
+  margin-bottom: 10px;
+}
+.centerMe {
+  text-align: center;
+}
+.linkedin {
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding-left: 10px;
+}
+.behance {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+.socialmedia::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .social {
-  display: inline-block;
-  width: 100%;
-  max-height: 55px;
+  max-width: 55px;
 }
 /* about page styling */
 .aboutme h2 {
@@ -185,6 +212,9 @@ main {
   width: 100%;
 }
 /* designery styling */
+.designery {
+  background-color: black;
+}
 .designery h2 {
   font-weight: 500;
   font-size: 1.75em;
@@ -192,7 +222,7 @@ main {
 }
 .designery.intro {
   text-align: center;
-  padding: 0 15px 5px 15px;
+  padding: 90px 15px 5px 15px;
   background-color: black;
   color: white;
   display: inline-block;
@@ -221,6 +251,12 @@ main {
   padding: 10px 15px;
   background-color: black;
   color: white;
+}
+.userflow {
+  display: block;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .designery.light.principles {
   text-align: center;
@@ -276,4 +312,175 @@ main {
 }
 .finaldesign.light h2 {
   font-weight: 300;
+}
+.solution1 {
+  max-width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.solution2 {
+  max-width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row.solution::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-sm-6 {
+  width: 35%;
+  display: inline-block;
+}
+.scaledown70 {
+  width: 70%;
+}
+.scaledown50 {
+  width: 50%;
+}
+.scaledown30 {
+  width: 30%;
+}
+.row.trends {
+  padding-top: 20px;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  main {
+    padding-top: 91px;
+  }
+  #hero span {
+    display: block;
+  }
+  .col-md-4 {
+    width: 20%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .userflow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .solution1 {
+    float: right;
+  }
+  .solution2 {
+    float: left;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .col-lg-2 {
+    width: 15%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* ==============================
+Berlin Illustration Animation Example
+================================= */
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* ==============================
+Music Illustration Animation Example
+================================= */
+.musicillustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes stars-grow {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+.stars {
+  animation: 1s stars-grow infinite alternate linear;
+}
+@keyframes notes-rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
+}
+.music-notes {
+  animation: 1s notes-rotate infinite alternate linear;
 }
