@@ -275,7 +275,7 @@ footer p {
 }
 .designery.light.visual img {
   display: block;
-  width: auto;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -346,6 +346,24 @@ footer p {
 .row.trends {
   padding-top: 20px;
 }
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-sm-6 {
+  width: 50%;
+}
+.col-sm-12 {
+  width: 100%;
+}
+.visual2 img {
+  width: 50%;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -368,12 +386,6 @@ Medium devices (640px and larger)
   #hero span {
     display: block;
   }
-  .col-md-4 {
-    width: 20%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
   [class*="col-"] {
     float: left;
     padding-left: 10px;
@@ -382,6 +394,12 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-6 {
+    width: 50%;
   }
   .userflow {
     margin-top: 30px;
@@ -411,6 +429,15 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
 /* ==============================
