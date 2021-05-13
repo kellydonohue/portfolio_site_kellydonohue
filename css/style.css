@@ -62,7 +62,7 @@ a:active {
 /*buttons*/
 .button {
   display: inline-block;
-  background-color: #7bc96b;
+  background-color: #4fa73d;
   color: #ffffff;
   font-weight: 500;
   padding: 10px;
@@ -84,11 +84,11 @@ a:active {
 }
 .button.contact {
   background-color: transparent;
-  color: #7bc96b;
+  color: #4fa73d;
   text-transform: uppercase;
   font-weight: 500;
   padding: 10px;
-  border: 2px solid #7bc96b;
+  border: 2px solid #4fa73d;
   border-radius: 3px;
   transition: 0.2s opacity;
   margin-bottom: 15px;
