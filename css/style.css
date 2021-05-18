@@ -82,6 +82,11 @@ a:active {
 .button.readmore {
   color: #ffffff;
 }
+.button.readmore.underconstruction {
+  background-color: darkgray;
+  pointer-events: none;
+  border-bottom: 2px solid gray;
+}
 .button.contact {
   background-color: transparent;
   color: #4fa73d;
@@ -456,6 +461,16 @@ Medium devices (640px and larger)
   }
   .col-md-6 {
     width: 50%;
+    padding-right: 20px;
+  }
+  .col-md-6.image {
+    text-align: right;
+  }
+  .col-md-6 img {
+    max-width: 470px;
+  }
+  .col-md-6 svg {
+    max-width: 470px;
   }
   .userflow {
     margin-top: 30px;
@@ -472,9 +487,6 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 60%;
-  }
   .col-lg-5 {
     width: 40%;
   }
